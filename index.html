@@ -5,8 +5,10 @@
   </head>
 
   <body>
-    <input type="text" id="inputBox" required>
-    <button onclick="alertInput()">Alert</button>
+    <form onsubmit="alertInput()">
+        <input type="text" id="inputBox" required>
+        <button type="submit">Alert</button>
+    </form>
   </body>
 
   <script>
