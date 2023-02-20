@@ -2,13 +2,18 @@
 <html>
     <head>
         <title>Text Input and Alert</title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="/css/index.css">
     </head>
 
     <body>
-        <form onsubmit="alertInput()">
-            <input type="text" id="inputBox" required />
-            <button type="submit">Alert</button>
-        </form>
+        <div class="wrapper">
+            <form class="form" onsubmit="event.preventDefault(); alertInput()">
+                <input type="text" id="inputBox" placeholder="Text to Alert" required>
+                <button type="submit">Alert</button>
+            </form>
+        </div>
     </body>
 
     <script>
